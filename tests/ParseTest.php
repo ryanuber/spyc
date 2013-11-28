@@ -393,4 +393,8 @@ dog', $this->yaml['many_lines']);
       $expected = array(array(array('x')));
       $this->assertSame($expected, Spyc::YAMLLoad("- - - x"));
     }
+
+    public function testMultilineBlockNodes() {
+        $this->assertEquals (array('abc' => 'def', 'ghi' => array ('jkl' => 'mno')), $this->yaml['multiline_block_nodes']);
+    }
 }

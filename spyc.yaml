@@ -215,3 +215,10 @@ quotes: ['Something', "Nothing", 'Anything', "Thing"]
 # [Endloop]
 endloop: |
   Does this line in the end indeed make Spyc go to an infinite loop?
+
+multiline_block_nodes: {
+  abc: def
+  ghi: {
+    jkl: mno
+  }
+}

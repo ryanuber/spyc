@@ -513,6 +513,9 @@ class Spyc {
       }
       $i--;
 
+      if (in_array($line, array('}', ']')))
+        continue;
+
       $lineArray = $this->_parseLine($line);
 
       if ($literalBlockStyle)
